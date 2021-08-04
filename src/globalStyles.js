@@ -24,4 +24,26 @@ export const Container = styled.div`
   }
 `;
 
+export const Button = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? "#4b59f7" : "#0467fb")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "0.75rem 4rem" : "0.625rem 1.25rem")};
+  color: #fff;
+  font-size: ${({ fontBig }) => (fontBig ? "1.25rem" : "1rem")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    background: ${({ primary }) => (primary ? "#0467fb" : "#4b59f7")};
+  }
+
+  @media screen and (max-width: 60em) {
+    width: 100%;
+  }
+`;
+
 export default GlobalStyle;

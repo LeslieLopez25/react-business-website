@@ -5,7 +5,7 @@ import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
   background: #101522;
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 5rem;
 
   ${Container}
 `;
@@ -63,10 +63,69 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 35.15625em;
     position: absolute;
-    top: 5em;
+    top: 5rem;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
   }
+`;
+
+export const NavItem = styled.li`
+  height: 5rem;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #4b59f7;
+  }
+
+  @media screen and (max-width: 60em) {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+`;
+
+export const NavLinks = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+
+  @media screen and (max-width: 60em) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+
+export const NavItemBtn = styled.li`
+  @media screen and (max-width: 60em) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7.5rem;
+  }
+`;
+
+export const NavBtnLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
 `;
