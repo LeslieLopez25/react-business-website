@@ -64,3 +64,18 @@ export const Subtitle = styled.p`
   line-height: 1.5rem;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
 `;
+
+export const ImgWrapper = styled.div`
+  max-width: 34.6875rem;
+  display: flex;
+  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+`;
+
+export const Img = styled.img`
+  padding-right: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 31.25rem;
+`;
