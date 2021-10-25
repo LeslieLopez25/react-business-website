@@ -9,6 +9,10 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 51.25em) {
+    position: absolute;
+  }
 `;
 
 export const FooterSubscription = styled.section`
