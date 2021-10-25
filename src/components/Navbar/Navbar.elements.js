@@ -95,6 +95,10 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   height: 100%;
 
+  &:hover {
+    color: hsl(195.1, 100%, 50%);
+  }
+
   @media screen and (max-width: 60em) {
     display: table;
     text-align: center;

@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { FaMagento } from "react-icons/fa";
+import { FaFire } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
-  padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(247.5, 80%, 3.9%);
+  padding: 4rem 0 2rem 0;
 
   @media screen and (max-width: 51.25em) {
     position: absolute;
@@ -21,21 +21,21 @@ export const FooterSubscription = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: hsl(0, 0%, 100%);
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  color: #fff;
 `;
 
 export const FooterSubHeading = styled.p`
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-bottom: 1.5rem;
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const FooterSubText = styled.p`
-  margin-bottom: 1.5rem;
   font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const Form = styled.form`
@@ -50,29 +50,29 @@ export const Form = styled.form`
 `;
 
 export const FormInput = styled.input`
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.125rem;
-  margin-right: 0.625rem;
-  outline: none;
-  border: none;
   font-size: 1rem;
-  border: 1px solid #fff;
+  margin-right: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.125rem;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 100%);
 
   &::placeholder {
-    color: #242424;
+    color: hsl(0, 0%, 3.1%);
   }
 
   @media screen and (max-width: 51.25em) {
-    width: 100%;
     margin: 0 0 1rem 0;
+    width: 100%;
   }
 `;
 
 export const FooterLinksContainer = styled.div`
-  width: 100%;
-  max-width: 62.5rem;
   display: flex;
   justify-content: center;
+  max-width: 62.5rem;
+  width: 100%;
 
   @media screen and (max-width: 51.25em) {
     padding-top: 2rem;
@@ -91,11 +91,11 @@ export const FooterLinksItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1rem;
+  color: hsl(0, 0%, 100%);
   text-align: left;
+  margin: 1rem;
   width: 10rem;
   box-sizing: border-box;
-  color: #fff;
 
   @media screen and (max-width: 26.25em) {
     margin: 0;
@@ -109,12 +109,12 @@ export const FooterLinkTitle = styled.h2`
 `;
 
 export const FooterLink = styled(Link)`
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
   margin-bottom: 0.5rem;
 
   &:hover {
-    color: #0467fb;
+    color: hsl(195.1, 100%, 50%);
     transition: 0.3s ease-out;
   }
 `;
@@ -128,8 +128,8 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   max-width: 62.5rem;
+  width: 90%;
   margin: 2.5rem auto 0 auto;
 
   @media screen and (max-width: 51.25rem) {
@@ -138,22 +138,22 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
-  justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
   display: flex;
+  justify-self: start;
   align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  text-decoration: none;
   margin-bottom: 1rem;
+  cursor: pointer;
 `;
 
-export const SocialIcon = styled(FaMagento)`
+export const SocialIcon = styled(FaFire)`
   margin-right: 0.625rem;
 `;
 
 export const WebsiteRights = styled.small`
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
 `;
 
@@ -165,6 +165,10 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
+
+  &:hover {
+    color: hsl(302.2, 100%, 27.3%);
+  }
 `;
