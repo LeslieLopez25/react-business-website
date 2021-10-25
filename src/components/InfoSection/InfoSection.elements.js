@@ -1,39 +1,40 @@
 import styled from "styled-components";
 
 export const InfoSec = styled.div`
-  color: #fff;
+  background: ${({ lightBg }) =>
+    lightBg ? "hsl(0,0%,100%)" : "hsl(247.5,80%,3.9%)"};
+  color: hsl(0, 0%, 100%);
   padding: 10rem 0;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
 `;
 
 export const InfoRow = styled.div`
   display: flex;
-  margin: 0 -0.9375rem -0.9375rem -0.9375rem;
-  flex-wrap: wrap;
-  align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -0.9375rem -0.9375rem -0.9375rem;
 `;
 
 export const InfoColumn = styled.div`
+  flex: 1;
+  flex-basis: 50%;
   margin-bottom: 0.9375rem;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-  flex: 1;
   max-width: 50%;
-  flex-basis: 50%;
 
   @media screen and (max-width: 48em) {
-    max-width: 100%;
-    flex-basis: 100%;
     display: flex;
     justify-content: center;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 33.75rem;
   padding-top: 0;
   padding-bottom: 3.75rem;
+  max-width: 33.75rem;
 
   @media screen and (max-width: 48em) {
     padding-bottom: 4.0625rem;
@@ -41,41 +42,44 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4b59f7")};
+  color: ${({ lightTopLine }) =>
+    lightTopLine ? "hsl(0,0%,75.3%)" : "hsl(300,100%,27.3%)"};
   font-size: 1.125rem;
-  line-height: 1rem;
   font-weight: 700;
+  line-height: 1rem;
   letter-spacing: 0.0875rem;
   margin-bottom: 1rem;
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 1.5rem;
+  color: ${({ lightText }) =>
+    lightText ? "hsl(180,100%,97.1%)" : "hsl(0,0%,3.1%)"};
   font-size: 3rem;
-  line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 `;
 
 export const Subtitle = styled.p`
-  max-width: 27.5rem;
-  margin-bottom: 2.1875rem;
+  color: ${({ lightTextDesc }) =>
+    lightTextDesc ? "hsl(0,0%,75.3%)" : "hsl(0,0%,3.1%)"};
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
+  margin-bottom: 2.1875rem;
+  max-width: 27.5rem;
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 34.6875rem;
   display: flex;
   justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  max-width: 34.6875rem;
 `;
 
 export const Img = styled.img`
-  padding-right: 0;
-  border: 0;
-  max-width: 100%;
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
+  padding-right: 0;
+  max-width: 100%;
   max-height: 31.25rem;
+  border: 0;
 `;

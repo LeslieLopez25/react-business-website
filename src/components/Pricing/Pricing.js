@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../../globalStyles";
-import { GiCrystalBars } from "react-icons/gi";
-import { GiCutDiamond, GiRock } from "react-icons/gi";
+import { GiCrystalGrowth } from "react-icons/gi";
+import { GiDiamondTrophy, GiRupee } from "react-icons/gi";
 import { IconContext } from "react-icons/lib";
 import {
   PricingSection,
@@ -20,7 +20,7 @@ import {
 
 const Pricing = () => {
   return (
-    <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
+    <IconContext.Provider value={{ color: "#c0c0c0", size: 64 }}>
       <PricingSection>
         <PricingWrapper>
           <PricingHeading>Our Services</PricingHeading>
@@ -28,7 +28,7 @@ const Pricing = () => {
             <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                  <GiRupee />
                 </PricingCardIcon>
                 <PricingCardPlan>Starter Pack</PricingCardPlan>
                 <PricingCardCost>$99.99</PricingCardCost>
@@ -36,7 +36,7 @@ const Pricing = () => {
                 <PricingCardFeatures>
                   <PricingCardFeature>100 New Users</PricingCardFeature>
                   <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature>Retargeting Analytics</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -44,7 +44,7 @@ const Pricing = () => {
             <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCrystalBars />
+                  <GiCrystalGrowth />
                 </PricingCardIcon>
                 <PricingCardPlan>Gold Rush</PricingCardPlan>
                 <PricingCardCost>$299.99</PricingCardCost>
@@ -60,7 +60,7 @@ const Pricing = () => {
             <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCutDiamond />
+                  <GiDiamondTrophy />
                 </PricingCardIcon>
                 <PricingCardPlan>Diamond Kings</PricingCardPlan>
                 <PricingCardCost>$999.99</PricingCardCost>
